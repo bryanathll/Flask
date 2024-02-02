@@ -16,7 +16,7 @@ def user():
 @app.route('/admin')
 def admin():
     if userApp == False:
-        return redirect(url_for(user))
+        return redirect(url_for('user'))
     else:
         return "404 user not found"
 
